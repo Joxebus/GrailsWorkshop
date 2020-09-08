@@ -1,5 +1,5 @@
 ## GrailsWorkshop Project 
-[![Build Status](https://travis-ci.com/Joxebus/GrailsWorkshop.svg?branch=master)](https://travis-ci.com/Joxebus/GrailsWorkshop)
+[![Build Status](https://travis-ci.com/Joxebus/GrailsWorkshop.svg?branch=01-domains)](https://travis-ci.com/Joxebus/GrailsWorkshop)
 
 This project it's aimed for those people that wants to learn how to create an app with Grails 4.x
 

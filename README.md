@@ -74,3 +74,13 @@ and finally
     └── test
         └── groovy
 ```
+
+## Run tests
+
+For MacOS and Linux
+
+`` ./gradlew test ``  
+
+or for Windows
+
+`` gradlew.bat test``

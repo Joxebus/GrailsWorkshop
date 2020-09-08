@@ -1,12 +1,19 @@
 buildscript {
     repositories {
-        maven { url "https://repo.grails.org/grails/core" }
+        mavenCentral()
+        maven {
+            url "https://repo.grails.org/grails/core"
+        }
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "gradle.plugin.com.github.erdi.webdriver-binaries:webdriver-binaries-gradle-plugin:2.0"
         classpath "org.grails.plugins:hibernate5:7.0.4"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:3.2.4"
+        classpath "com.gradle:gradle-enterprise-gradle-plugin:3.4.1"
     }
 }
 
@@ -20,6 +27,13 @@ apply plugin:"org.grails.grails-web"
 apply plugin:"com.github.erdi.webdriver-binaries"
 apply plugin:"com.bertramlabs.asset-pipeline"
 apply plugin:"org.grails.grails-gsp"
+apply plugin: 'com.gradle.build-scan'
+
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+}
+
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
